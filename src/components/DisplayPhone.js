@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
 import Phone from "./Phone";
 
 class DisplayPhone extends Component {

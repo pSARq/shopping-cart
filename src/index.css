@@ -96,3 +96,8 @@ h1{
 .drag{
   background-color: lightblue !important;
 }
+
+/* My cart */
+.placeholder{
+  text-align: center;
+}

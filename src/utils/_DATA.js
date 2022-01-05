@@ -13,30 +13,31 @@ let phones = {
   },
   Hauwei: {
     brand: "Hauwei",
-    inCart: "true",
+    inCart: "false",
   },
   HTC: {
     brand: "HTC",
-    inCart: "true",
+    inCart: "false",
   },
 };
 
-export function _getPhones (){
-  return new Promise((res, rej) =>{
-      setTimeout(() => res({...phones}), 1000);
+export function _getPhones() {
+  return new Promise((res, rej) => {
+    setTimeout(() => res({ ...phones }), 1000);
   });
 }
-export function setInCart({id, inCart}){
-  return new Promise((res, rej) =>{
-      setTimeout(() =>{
-          phones = {
-              ...phones,
-              [id]:{
-                  ...phones[id],
-                  inCart: inCart
-              }
-          }
-          res()
-      }, 500);
+
+export function setInCart({ id, inCart }) {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      phones = {
+        ...phones,
+        [id]: {
+          ...phones[id],
+          inCart: inCart,
+        },
+      };
+      res();
+    }, 500);
   });
 }

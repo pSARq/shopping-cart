@@ -7,6 +7,7 @@ export function receivePhones(phones) {
     phones,
   };
 }
+
 export function moveIncart(phone_id) {
   return {
     type: MOVE_INCART,
